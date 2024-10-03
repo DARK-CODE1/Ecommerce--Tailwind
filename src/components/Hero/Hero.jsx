@@ -55,7 +55,7 @@ const Hero = () => {
                                         <h1 className='text-5xl sm:text-6xl lg:text-7xl  font-bold'>{data.title}</h1>
                                         <h1 className='text-5xl uppercase text-white dark:text-white/5 sm:text-[70px] md:text-[90px] xl:text-[100px] font-bold'>{data.title2}</h1>
                                         <div>
-                                            <Button text='Buy Now' bgColor='bg-primary' textColor='text-white'/>
+                                            <Button text='Buy Now' bgColor='bg-primary' textColor='text-white' />
                                         </div>
                                     </div>
                                     <div className='order-1 sm:order-2'>
