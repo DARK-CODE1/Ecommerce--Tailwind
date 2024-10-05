@@ -4,6 +4,7 @@ import image1 from "../../assets/hero/headphone.png";
 import image2 from "../../assets/category/vr.png";
 import image3 from "../../assets/category/macbook.png";
 import Button from '../Shared/Button';
+
 const HeroData = [
     {
         id: 1,
