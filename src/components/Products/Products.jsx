@@ -74,7 +74,6 @@ function Products() {
         <div>
             <div className="container">
                 <Heading title="Our Products" subtitle={"Explore Our Products"} />
-
                 <ProductCard data={ProductsData} />
                 <ProductCard data={ProductsData2} />
             </div>

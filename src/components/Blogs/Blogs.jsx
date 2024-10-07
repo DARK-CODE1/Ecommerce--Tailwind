@@ -10,21 +10,24 @@ const BlogsDats = [
         title: 'How To Choose Perfect Smartwatch',
         subtitle: 'Recusandae corrupti culpa quo nulla nisi rerum provident doloremque pariatur explicabo aut eveniet iusto atque aliquam tenetur, sunt animi maiores placeat doloribus.',
         published: 'Jan 20 , 2024 By Dilshad',
-        img: image1
+        img: image1,
+        aosDelay: '0',
     },
     {
         id: 2,
         title: 'How To Choose Perfect Gadget',
         subtitle: 'Recusandae corrupti culpa quo nulla nisi rerum provident doloremque pariatur explicabo aut eveniet iusto atque aliquam tenetur, sunt animi maiores placeat doloribus.',
         published: 'Jan 20 , 2024 By Satya',
-        img: image2
+        img: image2,
+        aosDelay: '200',
     },
     {
         id: 3,
         title: 'How To Choose Perfect VR Headset',
         subtitle: 'Recusandae corrupti culpa quo nulla nisi rerum provident doloremque pariatur explicabo aut eveniet iusto atque aliquam tenetur, sunt animi maiores placeat doloribus.',
         published: 'Jan 08 , 2024 By Sabir',
-        img: image3
+        img: image3,
+        aosDelay: '400',
     },
 
 ]
@@ -36,7 +39,7 @@ const Blogs = () => {
                 <Heading title="Recent News" subtitle={"Explore Our Blogs"} />
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-3 sm:gap-4 md:gap-7">
                     {BlogsDats.map((data) => (
-                        <div key={data.id} className='bg-white dark:bg-gray-900'>
+                        <div key={data.id} data-aos='fade-up' data-aos-delay={data.aosDelay} className='bg-white dark:bg-gray-900'>
                             <div className='overflow-hidden rounded-2xl mb-2 '>
                                 <img src={data.img} alt="" className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500" />
                             </div>
